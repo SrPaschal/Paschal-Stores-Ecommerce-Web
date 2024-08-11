@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.checkout-heading{
+    font-size: 54px;
+    font-weight: 700;
+    color: orangered;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.main {
+    padding: 20px 5%;
+    display: flex;
+    align-items: start;
+    gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.checkout-container{
+    width: 60%;
+}
+
+.checkout-container h1, .order-heading{
+    font-size: 36px;
+    font-weight: 700;
+    color: orangered;
+    margin-bottom: 20px;
+}
+
+.checkout-container form{
+    width: 100%;
+}
+
+.checkout-container form div label{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.checkout-container form div input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.checkout-container form div input:focus{
+    border: 2px solid orangered;
+    transition: 0.5s linear;
+}
+
+.order-details{
+    width: 40%;
+    font-size: 18px;
+}
+
+.order-details .product-total{
+    padding: 10px 0;
+    border-bottom: 2px solid #eee;
+    background-color: ghostwhite;
+    padding: 10px;
+    border-radius: 0px 0px 6px 6px;
+}
+
+.order-details .product-order{
+    border-bottom: 2px solid orangered;
+    background-color: ghostwhite;
+    padding: 10px;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.order-details .product-order span, .order-details .product-total span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.payment-method{
+    width: 100%;
+    margin-top: 20px;
+    background-color: ghostwhite;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.method-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-btn-container{
+    width: 100%;
+    margin-top: 20px;
+    background-color: ghostwhite;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.order-btn-container .order-btn{
+    background-color: orangered;
+    border: 2px solid orangered;
+    color: white;
+    font-weight: bold;
+    padding: 16px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.order-btn-container .order-btn:hover{
+    background-color: white;
+    color: orangered;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1000px) {
+    .checkout-container{
+        width: 50%;
+    }
+
+    .order-details{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main {
+        flex-direction: column;
+    }
+    .checkout-container{
+        width: 100%;
+    }
+
+    .order-details{
+        width: 100%;
+    }
+}
